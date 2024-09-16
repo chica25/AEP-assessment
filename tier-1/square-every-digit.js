@@ -1,32 +1,25 @@
-// /**
-// @param {number} num
-// @returns {number}
-// */
-// module.exports = function(num){
-//   //Solution goes here
-// }
+/**
+@param {number} num
+@returns {number}
+*/
+module.exports = function(num){
+  //Solution goes here
+}
 
-// use a for loop to iterate through the vowels
-// you can use the length function to get the total length of the word
-// create an if statement...
+/*
+Pseudo code
+- need to convert number into a string
+- can use the split function and join to concatenate
+- need to use the square operator
+- can use the for loop to iterate 
+*/
 
-function getCount(str) {
-  let vowelCount = 0;
-  for (let i = 0; i < str.length; i++ ){
-   // console.log(str[i])
-  //     abracadabra
-      if(str[i] == 'a') {
-        vowelCount += 1
-      } else if(str[i] == 'e') {
-        vowelCount += 1
-      } else if(str[i] == 'i') {
-        vowelCount += 1
-      } else if(str[i] == 'o') {  
-        vowelCount += 1
-      } else if(str[i] == 'u') {  
-        vowelCount += 1
-      console.log(vowelCount)
-    }
+function squareDigits(num){
+  let string = String(num)
+  let result = "";
+  
+  for(let i = 0; i < string.length; i++){
+    result += string[i] ** 2
   }
-   return vowelCount;
+  return Number(result);
 }
